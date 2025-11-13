@@ -1,0 +1,1213 @@
+{
+  "designSystem": {
+    "name": "Vibrant Workspace Design System",
+    "version": "1.0.0",
+    "description": "A modern, energetic design system featuring soft rounded corners, vibrant lime-green accents, and a card-based interface that balances playfulness with professionalism.",
+
+    "designPhilosophy": {
+      "vision": "Create an engaging, user-friendly workspace that energizes users while maintaining professional clarity and organization.",
+      "principles": [
+        "Breathable whitespace - Every element needs room to breathe",
+        "Friendly geometry - Rounded corners create approachability and warmth",
+        "Visual hierarchy - Size, weight, and color guide the eye naturally",
+        "Information containment - Cards group related content logically",
+        "Purposeful color - Lime green energizes without overwhelming",
+        "Human-centered - Avatars and personal elements create connection",
+        "Clear affordances - Interactive elements are immediately recognizable",
+        "Consistent rhythm - Spacing and sizing follow predictable patterns"
+      ],
+      "designStyle": "Modern minimal with a playful edge. Clean, card-based layouts with generous spacing. Vibrant color palette that energizes without sacrificing readability. Soft, rounded shapes throughout create a friendly, approachable feel while maintaining professional credibility."
+    },
+
+    "colorPalette": {
+      "description": "A vibrant, high-energy palette anchored by lime green, balanced with clean whites and deep purples for contrast.",
+
+      "primary": {
+        "lime": {
+          "value": "#D4E157",
+          "usage": "Primary brand color, page backgrounds, highlighted dates, primary buttons, accent elements",
+          "psychology": "Energetic, fresh, optimistic, growth-oriented"
+        },
+        "limeDark": {
+          "value": "#C0D944",
+          "usage": "Hover states for lime elements, slight variations for depth"
+        },
+        "limeLight": {
+          "value": "#E5F186",
+          "usage": "Subtle highlights, very light backgrounds where lime needs to be more subtle"
+        }
+      },
+
+      "neutral": {
+        "white": {
+          "value": "#FFFFFF",
+          "usage": "Card backgrounds, primary surface color, creates clean contrast against lime background"
+        },
+        "black": {
+          "value": "#1A1A1A",
+          "usage": "Primary text, headings, high-emphasis content"
+        },
+        "gray900": {
+          "value": "#2D2D2D",
+          "usage": "Secondary headings, important labels"
+        },
+        "gray700": {
+          "value": "#616161",
+          "usage": "Body text, medium-emphasis content"
+        },
+        "gray500": {
+          "value": "#9E9E9E",
+          "usage": "Supporting text, timestamps, de-emphasized content"
+        },
+        "gray300": {
+          "value": "#E0E0E0",
+          "usage": "Borders, dividers, subtle separators"
+        },
+        "gray100": {
+          "value": "#F5F5F5",
+          "usage": "Subtle backgrounds, hover states on white surfaces"
+        }
+      },
+
+      "accent": {
+        "purple": {
+          "value": "#6366F1",
+          "usage": "Progress indicators, interactive elements, message icons, toggle switches (active state)",
+          "psychology": "Trust, creativity, intelligence"
+        },
+        "purpleLight": {
+          "value": "#A5B4FC",
+          "usage": "Lighter version for backgrounds or secondary purple elements"
+        }
+      },
+
+      "semantic": {
+        "success": {
+          "value": "#C0D944",
+          "usage": "Success states, accept buttons, positive confirmations (uses lime variant)"
+        },
+        "error": {
+          "value": "#EF4444",
+          "usage": "Error states, deny/reject actions, warnings"
+        },
+        "warning": {
+          "value": "#F59E0B",
+          "usage": "Warning states, alerts that need attention"
+        },
+        "info": {
+          "value": "#6366F1",
+          "usage": "Informational badges, neutral notifications (uses purple)"
+        }
+      },
+
+      "integration": {
+        "description": "Brand colors for third-party integrations",
+        "slack": "#E01E5A",
+        "googleMeet": "#4285F4",
+        "github": "#24292E",
+        "stripe": "#635BFF",
+        "visa": "#1A1F71",
+        "paypal": "#003087",
+        "mastercard": "#EB001B"
+      }
+    },
+
+    "typography": {
+      "description": "Clean, modern sans-serif hierarchy with clear size and weight distinctions for perfect readability.",
+
+      "fontFamily": {
+        "primary": {
+          "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
+          "description": "Modern, highly legible sans-serif. Use Inter for all UI text. Fallbacks ensure consistent rendering across platforms."
+        },
+        "mono": {
+          "value": "'Fira Code', 'Monaco', 'Courier New', monospace",
+          "description": "For code snippets, technical content, or data that needs monospace alignment"
+        }
+      },
+
+      "fontWeights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "usage": "Use regular for body text, medium for subtle emphasis, semibold for headings and labels, bold sparingly for strong emphasis"
+      },
+
+      "typeScale": {
+        "hero": {
+          "size": "48px",
+          "lineHeight": "56px",
+          "weight": 700,
+          "usage": "Large hero headings, landing page titles"
+        },
+        "h1": {
+          "size": "32px",
+          "lineHeight": "40px",
+          "weight": 700,
+          "usage": "Page titles, major section headings"
+        },
+        "h2": {
+          "size": "24px",
+          "lineHeight": "32px",
+          "weight": 600,
+          "usage": "Card titles, subsection headings (e.g., 'Christine Thompson', 'Notifications')"
+        },
+        "h3": {
+          "size": "20px",
+          "lineHeight": "28px",
+          "weight": 600,
+          "usage": "Smaller headings, emphasized labels (e.g., 'Amber website redesign')"
+        },
+        "h4": {
+          "size": "18px",
+          "lineHeight": "24px",
+          "weight": 600,
+          "usage": "List headings, minor section titles"
+        },
+        "body": {
+          "size": "16px",
+          "lineHeight": "24px",
+          "weight": 400,
+          "usage": "Primary body text, descriptions, default text size"
+        },
+        "bodySmall": {
+          "size": "14px",
+          "lineHeight": "20px",
+          "weight": 400,
+          "usage": "Supporting text, captions (e.g., 'Project manager', notification text)"
+        },
+        "caption": {
+          "size": "12px",
+          "lineHeight": "16px",
+          "weight": 400,
+          "usage": "Timestamps, metadata, very small labels"
+        },
+        "overline": {
+          "size": "11px",
+          "lineHeight": "16px",
+          "weight": 600,
+          "letterSpacing": "0.5px",
+          "textTransform": "uppercase",
+          "usage": "Category labels, section markers"
+        }
+      },
+
+      "textStyles": {
+        "cardTitle": {
+          "size": "24px",
+          "weight": 600,
+          "color": "#1A1A1A",
+          "letterSpacing": "-0.02em"
+        },
+        "cardSubtitle": {
+          "size": "14px",
+          "weight": 400,
+          "color": "#616161",
+          "letterSpacing": "0"
+        },
+        "buttonText": {
+          "size": "14px",
+          "weight": 500,
+          "letterSpacing": "0.01em"
+        },
+        "badgeText": {
+          "size": "13px",
+          "weight": 500,
+          "letterSpacing": "0"
+        }
+      }
+    },
+
+    "spacing": {
+      "description": "Consistent 4px-based spacing scale. Use larger spacing for breathing room, smaller for tight groupings.",
+
+      "scale": {
+        "0": "0px",
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "7": "28px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px",
+        "20": "80px"
+      },
+
+      "componentSpacing": {
+        "cardPadding": "24px",
+        "cardPaddingLarge": "32px",
+        "cardGap": "20px",
+        "sectionGap": "16px",
+        "elementGap": "12px",
+        "tightGap": "8px",
+        "listItemPadding": "16px",
+        "buttonPaddingVertical": "10px",
+        "buttonPaddingHorizontal": "20px",
+        "inputPadding": "12px 16px"
+      },
+
+      "layout": {
+        "pageMargin": "24px",
+        "maxContentWidth": "1440px",
+        "columnGap": "20px",
+        "gridGap": "20px"
+      }
+    },
+
+    "borderRadius": {
+      "description": "Generous rounding creates friendly, approachable feel. Larger elements get larger radii.",
+
+      "scale": {
+        "none": "0px",
+        "sm": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "full": "9999px"
+      },
+
+      "usage": {
+        "card": "24px",
+        "cardLarge": "32px",
+        "button": "12px",
+        "buttonLarge": "16px",
+        "input": "12px",
+        "badge": "9999px",
+        "avatar": "9999px",
+        "chip": "9999px",
+        "modal": "20px",
+        "notification": "16px",
+        "paymentBadge": "12px"
+      }
+    },
+
+    "shadows": {
+      "description": "Soft, subtle shadows create gentle elevation without harsh contrasts. Use sparingly for depth.",
+
+      "levels": {
+        "none": "none",
+        "sm": "0px 1px 2px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.06)",
+        "md": "0px 2px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06)",
+        "lg": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08)",
+        "xl": "0px 8px 16px rgba(0, 0, 0, 0.06), 0px 12px 24px rgba(0, 0, 0, 0.10)"
+      },
+
+      "usage": {
+        "card": "0px 2px 8px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.04)",
+        "cardHover": "0px 4px 12px rgba(0, 0, 0, 0.10), 0px 8px 20px rgba(0, 0, 0, 0.06)",
+        "button": "0px 1px 2px rgba(0, 0, 0, 0.06)",
+        "dropdown": "0px 4px 16px rgba(0, 0, 0, 0.12)",
+        "modal": "0px 12px 32px rgba(0, 0, 0, 0.16)"
+      }
+    },
+
+    "components": {
+      "card": {
+        "description": "Primary content container. Clean white background with soft shadow, generous padding, and rounded corners.",
+        "structure": {
+          "background": "#FFFFFF",
+          "borderRadius": "24px",
+          "padding": "24px",
+          "paddingLarge": "32px",
+          "shadow": "0px 2px 8px rgba(0, 0, 0, 0.08), 0px 4px 12px rgba(0, 0, 0, 0.04)"
+        },
+        "variants": {
+          "default": "Standard card with 24px padding",
+          "compact": "Reduced padding (16px) for tighter layouts",
+          "spacious": "Increased padding (32px) for feature cards"
+        },
+        "guidelines": "Cards should contain logically grouped information. Avoid nesting cards within cards. Use consistent padding across similar card types. Cards float above the lime background creating clear visual separation."
+      },
+
+      "button": {
+        "description": "Clear, actionable elements with distinct visual states. Primary buttons use lime green, secondary are outlined.",
+        "variants": {
+          "primary": {
+            "background": "#D4E157",
+            "backgroundHover": "#C0D944",
+            "color": "#1A1A1A",
+            "border": "none",
+            "borderRadius": "12px",
+            "padding": "10px 20px",
+            "fontWeight": 500,
+            "fontSize": "14px",
+            "shadow": "0px 1px 2px rgba(0, 0, 0, 0.06)",
+            "usage": "Primary actions, 'View all', confirmations"
+          },
+          "secondary": {
+            "background": "transparent",
+            "backgroundHover": "#F5F5F5",
+            "color": "#1A1A1A",
+            "border": "1px solid #E0E0E0",
+            "borderRadius": "12px",
+            "padding": "10px 20px",
+            "fontWeight": 500,
+            "fontSize": "14px",
+            "usage": "Secondary actions, 'Mark all as read', cancellations"
+          },
+          "success": {
+            "background": "#C0D944",
+            "backgroundHover": "#A8C230",
+            "color": "#1A1A1A",
+            "border": "none",
+            "borderRadius": "12px",
+            "padding": "10px 20px",
+            "fontWeight": 500,
+            "fontSize": "14px",
+            "icon": "checkmark",
+            "usage": "Positive confirmations, 'Accept' actions"
+          },
+          "destructive": {
+            "background": "transparent",
+            "backgroundHover": "#FEF2F2",
+            "color": "#EF4444",
+            "border": "1px solid #EF4444",
+            "borderRadius": "12px",
+            "padding": "10px 20px",
+            "fontWeight": 500,
+            "fontSize": "14px",
+            "icon": "close",
+            "usage": "Negative actions, 'Deny request', deletions"
+          },
+          "icon": {
+            "background": "transparent",
+            "backgroundHover": "#F5F5F5",
+            "color": "#616161",
+            "border": "none",
+            "borderRadius": "8px",
+            "padding": "8px",
+            "size": "32px",
+            "usage": "Three-dot menus, icon-only actions"
+          }
+        },
+        "states": {
+          "hover": "Slightly darker background, subtle scale (1.02)",
+          "active": "Pressed state with reduced scale (0.98)",
+          "disabled": "50% opacity, no hover effects, cursor not-allowed",
+          "loading": "Show spinner, disable interaction, maintain size"
+        },
+        "guidelines": "Buttons should have clear labels. Use primary for main actions, secondary for alternatives. Icon buttons need tooltips. Maintain minimum touch target of 44px for mobile."
+      },
+
+      "avatar": {
+        "description": "Circular profile images with consistent sizing. Can be stacked to show multiple users.",
+        "sizes": {
+          "xs": {
+            "diameter": "24px",
+            "border": "2px solid white",
+            "usage": "Avatar stacks, compact lists"
+          },
+          "sm": {
+            "diameter": "32px",
+            "border": "2px solid white",
+            "usage": "Small lists, compact notifications"
+          },
+          "md": {
+            "diameter": "40px",
+            "border": "2px solid white",
+            "usage": "Default size for lists, notifications"
+          },
+          "lg": {
+            "diameter": "64px",
+            "border": "3px solid white",
+            "usage": "Profile cards, featured users"
+          },
+          "xl": {
+            "diameter": "80px",
+            "border": "3px solid white",
+            "usage": "Large profile headers"
+          }
+        },
+        "stack": {
+          "overlap": "-8px",
+          "maxVisible": 5,
+          "border": "2px solid white",
+          "zIndexIncrement": 1,
+          "guidelines": "Stack from left to right, most important first. Show '+N' indicator if more than maxVisible. Each avatar in stack should have white border to separate from neighbors."
+        },
+        "fallback": {
+          "type": "initials",
+          "background": "#6366F1",
+          "color": "#FFFFFF",
+          "fontWeight": 600,
+          "fontSize": "Proportional to avatar size"
+        }
+      },
+
+      "badge": {
+        "description": "Pill-shaped labels for status, categories, or counts. Soft backgrounds with clear text.",
+        "variants": {
+          "tag": {
+            "background": "#F5F5F5",
+            "color": "#1A1A1A",
+            "borderRadius": "9999px",
+            "padding": "6px 16px",
+            "fontSize": "13px",
+            "fontWeight": 500,
+            "usage": "Skill tags, categories (e.g., 'UI/UX Design', 'Project management')"
+          },
+          "count": {
+            "background": "#D4E157",
+            "color": "#1A1A1A",
+            "borderRadius": "9999px",
+            "padding": "4px 8px",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "minWidth": "24px",
+            "usage": "Unread counts, notification badges"
+          },
+          "status": {
+            "background": "Varies by status",
+            "color": "#FFFFFF",
+            "borderRadius": "9999px",
+            "padding": "4px 12px",
+            "fontSize": "12px",
+            "fontWeight": 500,
+            "usage": "Status indicators (active, pending, completed)"
+          }
+        }
+      },
+
+      "progressIndicator": {
+        "description": "Circular progress rings showing completion percentage. Purple stroke on light gray background.",
+        "structure": {
+          "size": "64px",
+          "strokeWidth": "6px",
+          "backgroundColor": "#F5F5F5",
+          "progressColor": "#6366F1",
+          "textColor": "#1A1A1A",
+          "fontSize": "16px",
+          "fontWeight": 600,
+          "animation": "Smooth fill on load, 1s ease-in-out"
+        },
+        "variants": {
+          "small": {
+            "size": "48px",
+            "strokeWidth": "5px",
+            "fontSize": "14px"
+          },
+          "medium": {
+            "size": "64px",
+            "strokeWidth": "6px",
+            "fontSize": "16px"
+          },
+          "large": {
+            "size": "80px",
+            "strokeWidth": "7px",
+            "fontSize": "18px"
+          }
+        },
+        "guidelines": "Always show percentage text in center. Use consistent stroke width relative to size. Animate progress changes smoothly. Background circle should be subtle gray."
+      },
+
+      "calendar": {
+        "description": "Month view calendar with navigation. Highlighted current date, muted past dates.",
+        "structure": {
+          "headerFontSize": "18px",
+          "headerFontWeight": 600,
+          "dayHeaderFontSize": "14px",
+          "dayHeaderColor": "#616161",
+          "dayFontSize": "14px",
+          "dayColor": "#1A1A1A",
+          "spacing": "8px between dates",
+          "cellSize": "40px"
+        },
+        "dateStates": {
+          "default": {
+            "background": "transparent",
+            "color": "#1A1A1A"
+          },
+          "today": {
+            "background": "#D4E157",
+            "color": "#1A1A1A",
+            "borderRadius": "12px",
+            "fontWeight": 600
+          },
+          "selected": {
+            "background": "#6366F1",
+            "color": "#FFFFFF",
+            "borderRadius": "12px",
+            "fontWeight": 600
+          },
+          "pastMonth": {
+            "color": "#D0D0D0",
+            "fontWeight": 400
+          },
+          "hover": {
+            "background": "#F5F5F5",
+            "borderRadius": "12px",
+            "cursor": "pointer"
+          }
+        },
+        "navigation": {
+          "arrows": "Chevron icons, 16px, #616161",
+          "position": "Flanking the month/year header"
+        }
+      },
+
+      "notificationItem": {
+        "description": "List item showing user action with avatar, message, timestamp, and optional action buttons.",
+        "structure": {
+          "padding": "16px",
+          "borderRadius": "12px",
+          "background": "transparent",
+          "backgroundHover": "#F5F5F5",
+          "gap": "12px between elements",
+          "layout": "Horizontal flex: avatar | content | actions"
+        },
+        "elements": {
+          "avatar": "40px diameter",
+          "message": {
+            "fontSize": "14px",
+            "lineHeight": "20px",
+            "color": "#1A1A1A"
+          },
+          "timestamp": {
+            "fontSize": "12px",
+            "color": "#9E9E9E"
+          },
+          "actions": {
+            "gap": "8px",
+            "alignment": "Right side of item"
+          }
+        },
+        "variants": {
+          "withActions": "Shows Accept/Deny buttons on hover or always visible",
+          "readOnly": "Just avatar, message, timestamp, three-dot menu",
+          "alert": "Warning icon instead of avatar, lime background for attention"
+        }
+      },
+
+      "userListItem": {
+        "description": "Person card showing avatar, name, role, and message action. Used in contact lists.",
+        "structure": {
+          "background": "#FFFFFF",
+          "borderRadius": "16px",
+          "padding": "16px",
+          "layout": "Horizontal flex: avatar | text content | action icon",
+          "gap": "12px",
+          "marginBottom": "12px"
+        },
+        "elements": {
+          "avatar": "48px diameter",
+          "name": {
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "color": "#1A1A1A"
+          },
+          "role": {
+            "fontSize": "14px",
+            "color": "#616161",
+            "marginTop": "2px"
+          },
+          "messageIcon": {
+            "size": "20px",
+            "color": "#6366F1",
+            "background": "#F5F5FF",
+            "borderRadius": "8px",
+            "padding": "8px"
+          }
+        },
+        "states": {
+          "hover": "Subtle scale (1.01), cursor pointer",
+          "active": "Slight background change to #FAFAFA"
+        }
+      },
+
+      "integrationToggle": {
+        "description": "Integration list item with logo, description, and toggle switch.",
+        "structure": {
+          "padding": "16px 0",
+          "borderBottom": "1px solid #F5F5F5",
+          "layout": "Horizontal flex: icon | text content | toggle",
+          "gap": "16px"
+        },
+        "elements": {
+          "icon": {
+            "size": "32px",
+            "borderRadius": "8px",
+            "background": "white or brand color"
+          },
+          "title": {
+            "fontSize": "16px",
+            "fontWeight": 600,
+            "color": "#1A1A1A"
+          },
+          "description": {
+            "fontSize": "13px",
+            "color": "#9E9E9E",
+            "marginTop": "2px"
+          },
+          "toggle": {
+            "width": "44px",
+            "height": "24px",
+            "borderRadius": "12px",
+            "activeBackground": "#6366F1",
+            "inactiveBackground": "#E0E0E0",
+            "thumbSize": "20px",
+            "thumbColor": "#FFFFFF"
+          }
+        }
+      },
+
+      "paymentBadge": {
+        "description": "Brand logo cards for payment methods. Clean white background with logo centered.",
+        "structure": {
+          "background": "#FFFFFF",
+          "borderRadius": "12px",
+          "padding": "16px 20px",
+          "minWidth": "80px",
+          "height": "56px",
+          "border": "1px solid #F0F0F0",
+          "display": "flex",
+          "alignItems": "center",
+          "justifyContent": "center"
+        },
+        "logo": {
+          "maxHeight": "24px",
+          "maxWidth": "60px",
+          "objectFit": "contain"
+        },
+        "states": {
+          "default": "Light border, white background",
+          "hover": "Border color darkens to #E0E0E0, subtle scale (1.02)",
+          "selected": "Border color #6366F1, border width 2px"
+        }
+      },
+
+      "projectCard": {
+        "description": "Feature card showing project details with progress, description, and team avatars.",
+        "structure": {
+          "background": "#FFFFFF",
+          "borderRadius": "24px",
+          "padding": "24px",
+          "minHeight": "200px"
+        },
+        "layout": {
+          "progressRing": "Top left, 64px",
+          "threeDotsMenu": "Top right, icon button",
+          "title": "Below progress ring, 20px font, 600 weight",
+          "description": "Below title, 14px font, 400 weight, gray color",
+          "avatarStack": "Bottom of card, overlapping avatars"
+        },
+        "spacing": {
+          "topRowGap": "Space between progress and menu",
+          "titleMarginTop": "16px",
+          "descriptionMarginTop": "8px",
+          "avatarsMarginTop": "20px"
+        }
+      },
+
+      "milestoneCard": {
+        "description": "Project milestone showing title, due date, progress, and assignees.",
+        "structure": {
+          "background": "#FFFFFF",
+          "borderRadius": "24px",
+          "padding": "24px",
+          "minHeight": "140px"
+        },
+        "layout": {
+          "header": "Title on left, 'View details' link on right",
+          "content": "Two-column: due date + progress | assignees",
+          "contentGap": "20px between columns"
+        },
+        "elements": {
+          "title": {
+            "fontSize": "20px",
+            "fontWeight": 600,
+            "color": "#1A1A1A"
+          },
+          "viewDetails": {
+            "fontSize": "14px",
+            "color": "#616161",
+            "textDecoration": "none",
+            "hover": "Underline"
+          },
+          "dueDate": {
+            "label": "Due date:",
+            "labelColor": "#9E9E9E",
+            "labelSize": "13px",
+            "value": "March 20th",
+            "valueColor": "#1A1A1A",
+            "valueSize": "14px",
+            "valueWeight": 500
+          },
+          "assignees": {
+            "label": "Assignees:",
+            "avatarStack": "Medium avatars, overlapping"
+          }
+        }
+      },
+
+      "input": {
+        "description": "Text input fields with clean borders and clear focus states.",
+        "structure": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E0E0E0",
+          "borderRadius": "12px",
+          "padding": "12px 16px",
+          "fontSize": "14px",
+          "fontWeight": 400,
+          "color": "#1A1A1A",
+          "placeholderColor": "#9E9E9E"
+        },
+        "states": {
+          "default": "Light gray border",
+          "hover": "Border color darkens to #D0D0D0",
+          "focus": "Border color #6366F1, border width 2px, outline none",
+          "error": "Border color #EF4444, border width 2px",
+          "disabled": "Background #F5F5F5, text color #9E9E9E, cursor not-allowed"
+        },
+        "variants": {
+          "text": "Standard text input",
+          "textarea": "Multi-line, min-height 80px, resize vertical",
+          "search": "Search icon on left, clear icon on right when filled"
+        }
+      },
+
+      "dropdown": {
+        "description": "Select menus and dropdown lists with smooth animations.",
+        "trigger": {
+          "background": "#FFFFFF",
+          "border": "1px solid #E0E0E0",
+          "borderRadius": "12px",
+          "padding": "12px 16px",
+          "fontSize": "14px",
+          "chevron": "Right side, 16px, rotates 180° when open"
+        },
+        "menu": {
+          "background": "#FFFFFF",
+          "borderRadius": "12px",
+          "shadow": "0px 4px 16px rgba(0, 0, 0, 0.12)",
+          "padding": "8px",
+          "marginTop": "4px",
+          "maxHeight": "300px",
+          "overflowY": "auto"
+        },
+        "item": {
+          "padding": "10px 12px",
+          "borderRadius": "8px",
+          "fontSize": "14px",
+          "color": "#1A1A1A",
+          "hover": {
+            "background": "#F5F5F5"
+          },
+          "selected": {
+            "background": "#E5F186",
+            "fontWeight": 500
+          }
+        }
+      },
+
+      "modal": {
+        "description": "Overlay dialogs for focused interactions. Centered on screen with backdrop.",
+        "backdrop": {
+          "background": "rgba(0, 0, 0, 0.5)",
+          "backdropFilter": "blur(4px)"
+        },
+        "container": {
+          "background": "#FFFFFF",
+          "borderRadius": "20px",
+          "padding": "32px",
+          "maxWidth": "500px",
+          "shadow": "0px 12px 32px rgba(0, 0, 0, 0.16)"
+        },
+        "header": {
+          "fontSize": "24px",
+          "fontWeight": 600,
+          "marginBottom": "16px"
+        },
+        "closeButton": {
+          "position": "Top right",
+          "size": "32px",
+          "color": "#616161",
+          "hover": "#1A1A1A"
+        },
+        "actions": {
+          "marginTop": "24px",
+          "gap": "12px",
+          "alignment": "Right aligned"
+        }
+      },
+
+      "tooltip": {
+        "description": "Small contextual hints that appear on hover.",
+        "structure": {
+          "background": "#2D2D2D",
+          "color": "#FFFFFF",
+          "borderRadius": "8px",
+          "padding": "6px 12px",
+          "fontSize": "12px",
+          "maxWidth": "200px",
+          "shadow": "0px 2px 8px rgba(0, 0, 0, 0.15)"
+        },
+        "positioning": {
+          "offset": "8px from target",
+          "arrow": "4px triangle matching background"
+        },
+        "animation": {
+          "delay": "300ms",
+          "duration": "150ms",
+          "easing": "ease-out"
+        }
+      }
+    },
+
+    "layoutPatterns": {
+      "cardGrid": {
+        "description": "Primary layout pattern. Cards arranged in flexible grid on lime background.",
+        "structure": {
+          "display": "CSS Grid or Flexbox",
+          "columns": "Auto-fit, min 300px, max 1fr",
+          "gap": "20px",
+          "padding": "24px",
+          "background": "#D4E157"
+        },
+        "responsive": {
+          "mobile": "Single column, 16px padding",
+          "tablet": "2 columns, 20px gap",
+          "desktop": "3-4 columns based on content width"
+        }
+      },
+
+      "listLayout": {
+        "description": "Vertical stacking for notifications, users, integrations.",
+        "structure": {
+          "display": "Flex column",
+          "gap": "8px for tight lists, 12px for spacious",
+          "padding": "0 (items have own padding)"
+        }
+      },
+
+      "splitView": {
+        "description": "Two-column layout for detailed content.",
+        "structure": {
+          "display": "Grid or Flex",
+          "columns": "60/40 or 50/50 split",
+          "gap": "20px",
+          "responsive": "Stack vertically on mobile"
+        }
+      }
+    },
+
+    "interactions": {
+      "hover": {
+        "description": "Subtle feedback on interactive elements.",
+        "principles": [
+          "Slight background color change",
+          "Minimal scale (1.01-1.02)",
+          "Transition duration 150-200ms",
+          "Cursor changes to pointer",
+          "Never jarring or aggressive"
+        ]
+      },
+
+      "click": {
+        "description": "Clear feedback when clicking/tapping.",
+        "principles": [
+          "Brief scale down (0.98) on active state",
+          "Quick transition (100ms)",
+          "Visual state change if toggle/select",
+          "Immediate feedback, no perceived lag"
+        ]
+      },
+
+      "loading": {
+        "description": "Show progress during async operations.",
+        "patterns": [
+          "Spinner on buttons during submission",
+          "Skeleton screens for content loading",
+          "Progress bars for file uploads",
+          "Disable interaction during loading",
+          "Maintain layout, prevent shifts"
+        ]
+      },
+
+      "transitions": {
+        "description": "Smooth animations between states.",
+        "timing": {
+          "instant": "0-50ms for immediate feedback",
+          "fast": "100-150ms for UI state changes",
+          "moderate": "200-300ms for content transitions",
+          "slow": "400-500ms for page transitions"
+        },
+        "easing": {
+          "default": "ease-in-out",
+          "enter": "ease-out",
+          "exit": "ease-in"
+        }
+      }
+    },
+
+    "accessibility": {
+      "principles": [
+        "Minimum 4.5:1 contrast ratio for text",
+        "Touch targets minimum 44x44px",
+        "Keyboard navigation for all interactive elements",
+        "Focus indicators clearly visible (2px purple outline)",
+        "Screen reader labels for icon-only buttons",
+        "Semantic HTML structure",
+        "ARIA labels where needed",
+        "Reduced motion support via prefers-reduced-motion"
+      ],
+
+      "focusStates": {
+        "outline": "2px solid #6366F1",
+        "outlineOffset": "2px",
+        "borderRadius": "Matches element"
+      }
+    },
+
+    "responsiveDesign": {
+      "breakpoints": {
+        "mobile": "320px - 767px",
+        "tablet": "768px - 1023px",
+        "desktop": "1024px - 1439px",
+        "wide": "1440px+"
+      },
+
+      "principles": [
+        "Mobile-first approach",
+        "Fluid typography using clamp()",
+        "Flexible grids with minmax()",
+        "Touch-friendly targets on mobile",
+        "Simplified navigation on small screens",
+        "Progressive enhancement",
+        "Test on real devices"
+      ],
+
+      "adaptations": {
+        "mobile": {
+          "cards": "Full width, reduced padding (16px)",
+          "navigation": "Bottom nav or hamburger menu",
+          "avatarStacks": "Smaller avatars (24px)",
+          "buttons": "Full width for primary actions",
+          "modals": "Full screen or bottom sheet"
+        },
+        "tablet": {
+          "cards": "2 column grid",
+          "navigation": "Side drawer or top bar",
+          "spacing": "Standard 20px gaps"
+        },
+        "desktop": {
+          "cards": "3-4 column grid",
+          "navigation": "Persistent sidebar",
+          "hover": "Full hover states active",
+          "spacing": "Generous padding and gaps"
+        }
+      }
+    },
+
+    "iconography": {
+      "description": "Simple, consistent icons from a unified icon library.",
+      "library": "Lucide, Feather, or Heroicons recommended",
+      "style": {
+        "stroke": "2px",
+        "corners": "Rounded",
+        "fill": "None (outline style)",
+        "style": "Minimalist, geometric"
+      },
+      "sizes": {
+        "xs": "12px",
+        "sm": "16px",
+        "md": "20px",
+        "lg": "24px",
+        "xl": "32px"
+      },
+      "colors": {
+        "default": "#616161",
+        "active": "#1A1A1A",
+        "accent": "#6366F1",
+        "success": "#C0D944",
+        "error": "#EF4444"
+      },
+      "usage": [
+        "Use sparingly and purposefully",
+        "Always provide text labels or tooltips",
+        "Maintain consistent stroke width",
+        "Align icons with text baseline",
+        "Size proportionally to context"
+      ]
+    },
+
+    "imagery": {
+      "avatars": {
+        "format": "Circular crop",
+        "aspectRatio": "1:1",
+        "quality": "High resolution, optimized for web",
+        "fallback": "Initials on colored background"
+      },
+
+      "logos": {
+        "format": "SVG preferred, PNG fallback",
+        "sizing": "Maintain aspect ratio, max dimensions",
+        "padding": "Consistent space around logos",
+        "background": "White or transparent"
+      },
+
+      "illustrations": {
+        "style": "Simple, friendly, matches overall design tone",
+        "colors": "Use design system palette",
+        "usage": "Empty states, onboarding, errors"
+      }
+    },
+
+    "dataVisualization": {
+      "circularProgress": {
+        "description": "Primary method for showing completion percentage.",
+        "colors": {
+          "progress": "#6366F1",
+          "background": "#F5F5F5",
+          "text": "#1A1A1A"
+        },
+        "animation": "Smooth arc transition, 1s ease-in-out"
+      },
+
+      "charts": {
+        "colors": [
+          "#6366F1",
+          "#D4E157",
+          "#EC4899",
+          "#10B981",
+          "#F59E0B",
+          "#8B5CF6"
+        ],
+        "gridLines": "#F0F0F0",
+        "axisFontSize": "12px",
+        "axisFontColor": "#9E9E9E",
+        "tooltipBackground": "#2D2D2D",
+        "tooltipColor": "#FFFFFF"
+      }
+    },
+
+    "animations": {
+      "pageLoad": {
+        "pattern": "Stagger card entrance",
+        "delay": "50ms between each card",
+        "duration": "400ms",
+        "easing": "ease-out",
+        "effect": "Fade in + slight upward movement (20px)"
+      },
+
+      "cardHover": {
+        "transform": "scale(1.02)",
+        "shadow": "Increase elevation",
+        "duration": "200ms",
+        "easing": "ease-out"
+      },
+
+      "buttonClick": {
+        "transform": "scale(0.98)",
+        "duration": "100ms",
+        "easing": "ease-in"
+      },
+
+      "modalEnter": {
+        "backdrop": "Fade in 200ms",
+        "content": "Scale from 0.95 to 1, fade in, 300ms",
+        "easing": "ease-out"
+      },
+
+      "progressRing": {
+        "strokeDashoffset": "Animated from 100% to percentage",
+        "duration": "1000ms",
+        "easing": "ease-in-out",
+        "delay": "200ms after mount"
+      }
+    },
+
+    "bestPractices": {
+      "dos": [
+        "Use cards to group related information logically",
+        "Maintain consistent spacing using the 4px scale",
+        "Leverage white space - let content breathe",
+        "Use lime green as accent, not overwhelming primary",
+        "Keep text hierarchy clear with size and weight",
+        "Provide clear hover and focus states",
+        "Use avatar stacks to show collaboration",
+        "Make buttons clearly identifiable and clickable",
+        "Show progress and loading states",
+        "Use tooltips to explain icon-only buttons",
+        "Maintain accessibility standards",
+        "Test on multiple screen sizes",
+        "Optimize images and assets",
+        "Use semantic HTML",
+        "Provide keyboard navigation"
+      ],
+
+      "donts": [
+        "Don't nest cards within cards",
+        "Don't use multiple primary buttons in same context",
+        "Don't ignore accessibility requirements",
+        "Don't use lime green for large text blocks",
+        "Don't mix border radius styles inconsistently",
+        "Don't skip loading states",
+        "Don't use icons without labels or tooltips",
+        "Don't create tiny touch targets on mobile",
+        "Don't use low contrast color combinations",
+        "Don't animate excessively or aggressively",
+        "Don't break the established spacing scale",
+        "Don't use different shadow styles randomly",
+        "Don't forget responsive design",
+        "Don't skip focus indicators",
+        "Don't use different font families randomly"
+      ]
+    },
+
+    "implementationNotes": {
+      "cssVariables": {
+        "description": "Define all design tokens as CSS custom properties for easy theming and consistency.",
+        "example": {
+          "--color-lime": "#D4E157",
+          "--color-purple": "#6366F1",
+          "--color-white": "#FFFFFF",
+          "--color-black": "#1A1A1A",
+          "--spacing-card": "24px",
+          "--radius-card": "24px",
+          "--shadow-card": "0px 2px 8px rgba(0, 0, 0, 0.08)",
+          "--font-family": "'Inter', sans-serif"
+        }
+      },
+
+      "componentLibrary": {
+        "recommendation": "Build with React, Vue, or Svelte using component composition",
+        "structure": [
+          "Atomic design: atoms (buttons, inputs) → molecules (form fields) → organisms (cards) → templates → pages",
+          "Each component accepts design tokens as props",
+          "Variants managed through prop combinations",
+          "Storybook for component documentation",
+          "Accessibility built into each component"
+        ]
+      },
+
+      "stateManagement": {
+        "principles": [
+          "Manage theme state globally if supporting dark mode",
+          "Handle form state locally in components",
+          "Use context for user preferences",
+          "Persist important UI state to localStorage"
+        ]
+      },
+
+      "performance": {
+        "tips": [
+          "Lazy load images and avatars",
+          "Use CSS transforms for animations (GPU accelerated)",
+          "Debounce search and filter inputs",
+          "Virtualize long lists",
+          "Code split by route",
+          "Optimize and compress images",
+          "Use system fonts as fallback",
+          "Minimize JavaScript bundle size"
+        ]
+      }
+    }
+  }
+}
